@@ -19,7 +19,9 @@ body {
 }
 
 /*--- titels & tekst ---*/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -61,7 +63,7 @@ header {
 }
 header img {
   display: block;
-  /* Door voor margin "0 auto" te gebruiken zal de afbeelding in het middan van het scherm gplaatst worden. */ 
+  /* Door voor margin "0 auto" te gebruiken zal de afbeelding in het middan van het scherm gplaatst worden. */
   margin: 0 auto;
 }
 
@@ -93,7 +95,8 @@ nav > ul > li > a {
   margin: 4rem 1rem 0 0;
 }
 
-nav ul li a:hover, .active {
+nav ul li a:hover,
+.active {
   letter-spacing: 0.25rem;
   font-weight: bold;
   color: #e60005;
@@ -121,8 +124,8 @@ main {
 }
 
 .intro img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 main img {
   float: left;
@@ -190,9 +193,43 @@ footer {
   margin-top: 2rem;
 }
 
-footer p, footer p a {
-    color: white;
-    font-size: 0.8rem;
-    padding: 2rem 0 2rem 0;
-    text-align: center;
+footer p,
+footer p a {
+  color: white;
+  font-size: 0.8rem;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+/*--- portfolio ---*/
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.portfolio figure {
+  flex: 0 1 332px;
+  margin: 0;
+}
+
+.portfolio img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio figcaption {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #232226;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio figure {
+    width: 100%;
   }
+}

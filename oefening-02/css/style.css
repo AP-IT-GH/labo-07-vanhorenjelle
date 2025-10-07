@@ -1,0 +1,58 @@
+/* Reset en basis */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+/* Navigatie */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+nav a {
+  color: grey;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+/* Main container */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgrey;
+  background-image: url('../achtergrond.webp'); /* Voeg hier je afbeelding toe */
+  background-repeat: repeat;
+  padding: 10px;
+}
+
+/* Flex items */
+.item {
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Speciale derde item */
+.item.highlight {
+  background-color: rgba(139, 211, 146, 0.5);
+}
+
+.item.highlight::first-letter {
+  font-size: 200%;
+}
+
+/* Link styling */
+.item a {
+  color: grey;
+  text-decoration: none;
+}

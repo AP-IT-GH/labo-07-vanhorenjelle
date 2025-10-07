@@ -1,0 +1,60 @@
+/* Reset en basis */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigatie */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main grid */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-image: url('background.jpg'); /* Voeg hier je afbeelding toe */
+  background-repeat: repeat;
+  flex-grow: 1;
+}
+
+main figure {
+  flex: 1 1 30%;
+  background-color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: auto;
+}

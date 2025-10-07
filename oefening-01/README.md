@@ -14,3 +14,4 @@ Maak de preview van het flexbox model na.
 - achtergrondkleur van de section: `rgb (240, 240, 240)`
 
 > **TIP 1**: Centreer de body door de linker en rechter marge op auto te zetten. Je kunt hiervoor ook grid gebruiken
+ 
